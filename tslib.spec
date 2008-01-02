@@ -19,6 +19,7 @@ Summary:	Touchscreen access library
 URL:		http://developer.berlios.de/projects/tslib/
 License:	GPL
 Group:		System/Libraries
+BuildRoot:	%_tmppath/%name-root
 
 %description
 Hardware independent touchscreen access library.
