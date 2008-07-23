@@ -12,7 +12,7 @@ Version:	1.0
 Release:	%mkrel 0.%{date}.1
 Source:		%name-%{date}.tar.bz2
 %else
-Release:	%mkrel 1
+Release:	%mkrel 3
 Source:		http://download.berlios.de/tslib/%name-%version.tar.bz2
 %endif
 Summary:	Touchscreen access library
