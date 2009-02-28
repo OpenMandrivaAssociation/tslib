@@ -1,18 +1,22 @@
 
-%define date	%{nil}
+%define name	tslib
+%define version	1.0
+%define date	0
+%define rel	4
+
 %define api	0.0
 %define major	0
 %define libname	%mklibname ts %api %major
 # (anssi) unversioned libts.so symlink exists, so no %api in develname
 %define develname %mklibname ts -d
 
-Name:		tslib
-Version:	1.0
-%if "%{date}" != ""
-Release:	%mkrel 0.%{date}.1
+Name:		%{name}
+Version:	%{version}
+%if %{date}
+Release:	%mkrel 0.%{date}.%{rel}
 Source:		%name-%{date}.tar.bz2
 %else
-Release:	%mkrel 3
+Release:	%mkrel %{rel}
 Source:		http://download.berlios.de/tslib/%name-%version.tar.bz2
 %endif
 Summary:	Touchscreen access library
