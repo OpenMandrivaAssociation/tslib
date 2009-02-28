@@ -19,6 +19,7 @@ Source:		%name-%{date}.tar.bz2
 Release:	%mkrel %{rel}
 Source:		http://download.berlios.de/tslib/%name-%version.tar.bz2
 %endif
+Patch0:		tslib-glibc2.8.patch
 Summary:	Touchscreen access library
 URL:		http://developer.berlios.de/projects/tslib/
 License:	GPL
@@ -69,6 +70,7 @@ Development files (headers etc.) for %name.
 perl -pi -e 's,^# module_raw input$,module_raw input,' etc/ts.conf
 # For quick verification during building:
 grep "module_raw input" etc/ts.conf
+%patch0 -p1
 
 %build
 ./autogen.sh
