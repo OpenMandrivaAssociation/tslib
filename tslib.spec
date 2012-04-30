@@ -2,7 +2,7 @@
 %define name	tslib
 %define version	1.0
 %define date	0
-%define rel	5
+%define rel	6
 
 %define api	0.0
 %define major	0
@@ -16,7 +16,7 @@ Version:	%{version}
 Release:	%mkrel 0.%{date}.%{rel}
 Source:		%name-%{date}.tar.bz2
 %else
-Release:	%mkrel %{rel}
+Release:	%{rel}
 Source:		http://download.berlios.de/tslib/%name-%version.tar.bz2
 %endif
 Patch0:		tslib-glibc2.8.patch
@@ -86,13 +86,6 @@ rm %{buildroot}%{_libdir}/ts%{api}_%{major}/*.la
 %clean
 rm -rf %{buildroot}
 
-%if %mdkversion < 200900
-%post -n %{libname} -p /sbin/ldconfig
-%endif
-%if %mdkversion < 200900
-%postun -n %{libname} -p /sbin/ldconfig
-%endif
-
 %files utils
 %defattr(-,root,root)
 %_bindir/ts_*
@@ -111,6 +104,5 @@ rm -rf %{buildroot}
 %files -n %{develname}
 %defattr(-,root,root)
 %_libdir/*.so
-%_libdir/*.la
 %_includedir/tslib.h
 %_libdir/pkgconfig/*.pc
