@@ -106,3 +106,34 @@ rm -rf %{buildroot}
 %_libdir/*.so
 %_includedir/tslib.h
 %_libdir/pkgconfig/*.pc
+
+
+%changelog
+* Mon Apr 30 2012 Crispin Boylan <crisb@mandriva.org> 1.0-6
++ Revision: 794534
+- Rebuild
+
+* Sun Sep 20 2009 Thierry Vignaud <tv@mandriva.org> 1.0-5mdv2010.0
++ Revision: 445562
+- rebuild
+
+* Sat Feb 28 2009 Anssi Hannula <anssi@mandriva.org> 1.0-4mdv2009.1
++ Revision: 346002
+- fix build with glibc 2.8 (patch from debian)
+- spec file cleaning
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Pixel <pixel@mandriva.com>
+    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Mon Jul 16 2007 Anssi Hannula <anssi@mandriva.org> 1.0-1mdv2008.0
++ Revision: 52350
+- initial Mandriva Linux release based on .spec from Gary Greene
+  <greeneg@tolharadys.net>
+
