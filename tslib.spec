@@ -2,7 +2,7 @@
 %define name	tslib
 %define version	1.0
 %define date	0
-%define rel	6
+%define rel	7
 
 %define api	0.0
 %define major	0
