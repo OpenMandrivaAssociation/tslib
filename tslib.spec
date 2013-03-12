@@ -20,6 +20,8 @@ Release:	%{rel}
 Source:		http://download.berlios.de/tslib/%name-%version.tar.bz2
 %endif
 Patch0:		tslib-glibc2.8.patch
+Patch1:		tslib-1.0-automake1.13.patch
+
 Summary:	Touchscreen access library
 URL:		http://developer.berlios.de/projects/tslib/
 License:	GPL
@@ -71,6 +73,7 @@ perl -pi -e 's,^# module_raw input$,module_raw input,' etc/ts.conf
 # For quick verification during building:
 grep "module_raw input" etc/ts.conf
 %patch0 -p1
+%patch1 -p0
 
 %build
 ./autogen.sh
