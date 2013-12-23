@@ -1,5 +1,5 @@
 %define date 0
-%define rel 7
+%define rel 8
 
 %define api 0.0
 %define major 0
@@ -13,7 +13,7 @@ Version:	1.0
 Release:	%mkrel 0.%{date}.%{rel}
 Source0:	%name-%{date}.tar.bz2
 %else
-Release:	7
+Release:	8
 Source0:	http://download.berlios.de/tslib/%name-%version.tar.bz2
 %endif
 Patch0:		tslib-glibc2.8.patch
