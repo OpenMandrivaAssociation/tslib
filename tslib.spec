@@ -13,7 +13,7 @@ Version:	1.0
 Release:	%mkrel 0.%{date}.%{rel}
 Source0:	%name-%{date}.tar.bz2
 %else
-Release:	12
+Release:	13
 Source0:	http://download.berlios.de/tslib/%name-%version.tar.bz2
 %endif
 Patch0:		tslib-glibc2.8.patch
