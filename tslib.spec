@@ -4,7 +4,7 @@
 
 Name:		tslib
 Version:	1.18
-Release:	1
+Release:	2
 Source0:	https://github.com/kergoth/tslib/releases/download/%{version}/%{name}-%{version}.tar.xz
 Patch0:		use-format-argument-with-sprintf.patch
 Summary:	Touchscreen access library
