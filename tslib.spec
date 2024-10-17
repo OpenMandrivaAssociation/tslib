@@ -8,7 +8,7 @@ Release:	2
 Source0:	https://github.com/kergoth/tslib/releases/download/%{version}/%{name}-%{version}.tar.xz
 Patch0:		use-format-argument-with-sprintf.patch
 Summary:	Touchscreen access library
-URL:		http://developer.berlios.de/projects/tslib/
+URL:		https://developer.berlios.de/projects/tslib/
 License:	GPLv2+
 Group:		System/Libraries
 
