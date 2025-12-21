@@ -12,6 +12,11 @@ URL:		https://developer.berlios.de/projects/tslib/
 License:	GPLv2+
 Group:		System/Libraries
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 Hardware independent touchscreen access library.
 
