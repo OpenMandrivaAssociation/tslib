@@ -3,10 +3,10 @@
 %define develname	%mklibname ts -d
 
 Name:		tslib
-Version:	1.18
-Release:	2
+Version:	1.24
+Release:	1
 Source0:	https://github.com/kergoth/tslib/releases/download/%{version}/%{name}-%{version}.tar.xz
-Patch0:		use-format-argument-with-sprintf.patch
+# dropped (no longer applies): Patch0:		use-format-argument-with-sprintf.patch
 Summary:	Touchscreen access library
 URL:		https://developer.berlios.de/projects/tslib/
 License:	GPLv2+
